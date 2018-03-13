@@ -28,7 +28,7 @@ class Flashlight(Item):
     def __str__(self):
         return "{}\n=====\n{}\nValue: {}\nDamage: {}".format(self.name, self.description, self.value, self.damage)
 
-class Stick(Item):
+class Stick(Weapon):
     def __init__ (self):
         super().__init__(
             self.name = "Stick"
