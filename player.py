@@ -48,13 +48,13 @@ class Player():
         if not enemy.is_alive():
             print("You killed {}!".format(enemy.name))
         else:
-            print("{} HP is {}.".format(enemy.name, enemy.hp)
+            print("{} HP is {}.".format(enemy.name, enemy.hp))
+
 
     def do_action(self, action, **kwargs):
         action_method = getattr(self, action.method.__name__)
-        action_method(**kwargs)
         if action_method:
-            pass
+            action_method(**kwargs)
 
     def flee(self, tile):
         """Moves the player randomly to an adjacent tile"""
