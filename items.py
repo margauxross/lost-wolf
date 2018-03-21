@@ -40,15 +40,14 @@ class Weapon(Item):
 
 class Stick(Weapon):
     def __init__ (self):
-        super().__init__(
-            self.name = "Stick"
-            self.description = "A small, swishy stick. Good for poking things."
-            self.value = 1
-            self.damage = 1)
+        super().__init__(name="Stick",
+                         description="A small, swishy stick. Good for poking.",
+                         value=1,
+                         damage=1)
 
     def use(self):
         #Poke with stick, throw stick, drop stick, burn stick
-        print ("The stick pokes! It causes dubious damage!")
+        print ("Go stick! I believe in you!")
 
 class Rock(Weapon):
     def __init__(self):
