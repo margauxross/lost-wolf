@@ -20,8 +20,8 @@ class Gold(Item):
 class Flashlight(Item):
     def __init__(self):
         super().__init__(
-            name = "Flashlight"
-            description = "A rusty antique, emits a steady, glowing beam."
+            name = "Flashlight",
+            description = "A rusty antique, emits a steady, glowing beam.",
             value = 1
         )
     def use(self):
