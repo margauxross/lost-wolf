@@ -48,7 +48,8 @@ class Player():
         if not enemy.is_alive():
             print("You killed {}!".format(enemy.name))
         else:
-            print("{} HP is {}.".format(enemy.name, enemy.hp)
+            print("{} HP is {}.".format(enemy.name, enemy.hp))
+
 
     def do_action(self, action, **kwargs):
         action_method = getattr(self, action.method.__name__)
