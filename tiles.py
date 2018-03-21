@@ -108,15 +108,21 @@ class FindDaggerRoom(LootRoom):
         It's a dagger! You pick it up.
         """
 
-class FindGoldRoom(LootRoom):
+class Find5GoldRoom(LootRoom):
     def __init__(self, x, y):
-        super().__init__(x, y, items.Gold())
+        super().__init__(x, y, items.Gold(5))
 
     def intro_text(self):
         return """
         A small chest rests in the corner. You give it a sturdy kick and the lid springs open to reveal gold!
         """
-
+class SnakePitRoom(EmptyCavePath):
+    def intro_text(self):
+        return """
+        This room contains a massive pit, maybe 20 feet across.
+        It is absolutely full of Snapes! They coo softly and turn towards
+        you as you enter the room. Not much to do here.
+        """
 
 class LeaveCaveRoom(MapTile):
     def intro_text(self):
