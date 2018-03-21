@@ -82,3 +82,11 @@ class FindDaggerRoom(LootRoom):
         It's a dagger! You pick it up.
         """
 
+class FindGoldRoom(LootRoom):
+    def __init__(self, x, y):
+        super().__init__(x, y, items.Gold())
+
+    def intro_text(self):
+        return """
+        A small chest rests in the corner. You give it a sturdy kick and the lid springs open to reveal gold!
+        """
