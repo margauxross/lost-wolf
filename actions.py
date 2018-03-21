@@ -1,5 +1,4 @@
-import player as Player
-
+from player import Player
 
 class Action():
     def __init__(self, method, name, hotkey, **kwargs):
@@ -20,6 +19,7 @@ class MoveNorth(Action):
 class MoveSouth(Action):
     def __init__(self):
         super().__init__(method=Player.move_south, name='Move south', hotkey='s')
+
 
 class MoveEast(Action):
     def __init__(self):
