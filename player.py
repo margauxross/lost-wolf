@@ -52,9 +52,8 @@ class Player():
 
     def do_action(self, action, **kwargs):
         action_method = getattr(self, action.method.__name__)
-        action_method(**kwargs)
         if action_method:
-            pass
+            action_method(**kwargs)
 
     def flee(self, tile):
         """Moves the player randomly to an adjacent tile"""
