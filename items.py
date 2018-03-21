@@ -28,7 +28,7 @@ class Flashlight(Item):
         #Turn on flashlight, turn off flashlight, illuminate dark areas when turned on
         print("the flashlight flickers but does nothing as this feature is not implemented")
 
-=class Weapon(Item):
+class Weapon(Item):
     def __init__(self, name, description, value, damage):
         self.damage = damage
         super().__init__(name, description, value)
