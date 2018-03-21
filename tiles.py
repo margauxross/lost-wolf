@@ -116,3 +116,17 @@ class FindGoldRoom(LootRoom):
         return """
         A small chest rests in the corner. You give it a sturdy kick and the lid springs open to reveal gold!
         """
+
+
+class LeaveCaveRoom(MapTile):
+    def intro_text(self):
+        return """
+        You see a bright light in the distance...
+        ... it grows as you get closer! It's sunlight!
+
+
+        Victory is yours!
+        """
+
+    def modify_player(self, player):
+        player.victory = True
